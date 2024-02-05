@@ -8,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import fetchItem from '@app/fetch-products'
-import Items from "@components/Items"
+import Items from "@components/items"
 import Spinner from "@components/spinner"
 import { useEffect,useState } from 'react';
 
