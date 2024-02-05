@@ -81,8 +81,10 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          name: github-pages
       - name: Create Tar Archive
-        run: tar -czvf out/my_archive.tar.gz -C out/ .
+        run: tar -czvf my_archive.tar.gz -C out .
+
 
 
 
