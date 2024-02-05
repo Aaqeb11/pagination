@@ -82,7 +82,8 @@ jobs:
         with:
           path: ./out
       - name: Create Tar Archive
-        run: tar -czvf my_archive.tar.gz out/
+        run: tar -czvf out/my_archive.tar.gz -C out/ .
+
 
 
   # Deployment job
