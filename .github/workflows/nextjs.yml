@@ -81,6 +81,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Create Tar Archive
+        run: tar -czvf my_archive.tar.gz out/
+
 
   # Deployment job
   deploy:
